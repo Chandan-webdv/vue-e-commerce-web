@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        input[type="range"] {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="container-fluid bg-dark">
+    <div class="m-4 p-4 bg-light">
+        <h3 class="text-primary mt-2 text-center">personal Loan EMI Calculator</h3>
+        <div class="row mb-4">
+            <div class="col">
+                Amound you need <input type="text">
+            </div>
+            <div class="col">
+                for<input type="text" size="4">years
+            </div>
+            <div class="col">
+                interest rate<input type="text" size="2">%
+            </div>
+        </div>
+        
+        <div class="row mt-4">
+            <div class="col">
+                <input type="range" min="1" max="100" value="10">
+            </div>
+            <div class="col">
+                <input type="range" min="1" max="100" value="20">
+            </div>
+            <div class="col">
+                <input type="range" min="1" max="100" value="1">
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col d-flex justify-content-between">
+                <div>&#8377;50,000</div>
+                <div>&#8377;10,00,000</div>
+            </div>
+            <div class="col d-flex justify-content-between">
+                <div>1</div>
+                <div>5</div>
+            </div>
+            <div class="col d-flex justify-content-between">
+                <div> 10.30% </div>
+                <div> 18.32% </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col text-end ">
+                <button class="btn btn-primary">Calculate</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+

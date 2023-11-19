@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="..//node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <script>
+        count=0;
+        function LikesClick(){
+            count++;
+            document.getElementById("likes").innerHTML=count+"-likes"
+        }
+        function DislikeClick(){
+            count--;
+            document.getElementById("likes").innerHTML=count+"-likes"
+        }
+    </script>
+</head>
+<body>
+    <div>
+    <!--<img src="/public/image/ps1.jpg" width="300" height="400"> -->
+    </div>
+    <div>
+        <button onclick="LikesClick()" class="bi bi-hand-thumbs-up-fill"></button>
+        <span id="likes"></span>
+        <button onclick="DislikeClick()" class="bi bi-hand-thumbs-down-fill"></button>
+    </div>
+</body>
+</html>
+
+<!--For Image-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="..//node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <script>
+        var position=1;
+        function LeftClick(){
+            position --;
+            document.querySelector("img").style.marginLeft= position +"px";
+        }
+        function RightClick(){
+            position ++;
+            document.querySelector("img").style.marginLeft= position +"px";
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <button class="bi bi-chevron-left" onclick="LeftClick()"></button>
+        <button class="bi bi-chevron-right" onclick="RightClick()"></button>
+    </div>
+    <div>
+        <img src="..//public/image/ps2.jpg" height="200" width="300">
+    </div>
+</body>
+</html>

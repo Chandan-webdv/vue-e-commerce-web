@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="..//node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="..//node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container-fluid">
+    <button class="btn btn-primary mt-2 " data-bs-toggle="modal" data-bs-target="#login"> Log In</button>
+    <button class="btn btn-primary mt-2 " data-bs-toggle="modal" data-bs-target="#details">Movie Details</button>
+
+
+    <!--Login Model-->
+    <div class="modal " id="login">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h2><span class="bi bi-person-fill"></span>User Login</h2>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <dl>
+                        <dt>User Name</dt>
+                        <dd><input type="text" class="form-control"></dd>
+                        <dt>password</dt>
+                        <dd><input type="password" class="form-control"></dd>
+                        <dt>User Name</dt>
+                        <dd><input type="text" class="form-control"></dd>
+                        <dt>password</dt>
+                        <dd><input type="password" class="form-control"></dd>
+                        <dt>User Name</dt>
+                        <dd><input type="text" class="form-control"></dd>
+                        <dt>password</dt>
+                        <dd><input type="password" class="form-control"></dd>
+                    </dl>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary">Login</button>
+                    <button class="btn btn-danger" data-bs-dismiss="modal">cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <!--Details Modal-->
+    <div class="modal fade" id="details">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Jawan Movie</h3>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="../public/image/jawan.jpg" width="200" height="300" alt="tyt">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

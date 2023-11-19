@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="..//node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        dd,dt{
+            margin-top: 10px;
+        }
+    </style>
+    <script>
+        function GetCode(){
+            var a=Math.random()*10;
+            var b=Math.random()*10;
+            var c=Math.random()*10;
+            var d=Math.random()*10;
+            var e=Math.random()*10;
+            var f=Math.random()*10;
+            var code=Math.round(a)+""+Math.round(b)+""+Math.round(c)+""+Math.round(d)+""+
+            Math.round(e)+""+Math.round(f);
+            document.getElementById("code").innerHTML=code;
+        }
+    </script>
+</head>
+<body onload="GetCode()">
+    <h2>User Name</h2>
+    <dl>
+        <dt>User name</dt>
+        <dd><input type="text"></dd>
+        <dt>password</dt>
+        <dd><input type="password"></dd>
+        <dt>Veriy code <button onclick="GetCode()" class="bi bi-arrow-clockwise"></button></dt>
+        <dd id="code"></dd>
+    </dl>
+    <button onclick="GetCode()">Login</button>
+</body>
+</html>

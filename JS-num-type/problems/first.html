@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Extract the domain name and id from email address-->
+    <script>
+        function GetDetails(email){
+            var atPos=email.indexOf("@");
+            var id=email.substring(atPos,0);
+            var domain=email.substring(atPos+1);
+            document.write(`Email id=${id}<br> Domain=${domain}`)
+        }
+        GetDetails(prompt("Enter email..."))
+    </script>
+</body>
+</html>

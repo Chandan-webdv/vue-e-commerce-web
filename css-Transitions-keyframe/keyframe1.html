@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+
+        @keyframes Blink{
+            form{
+                opacity: 0;
+                transform: rotate(0deg);
+                width: 10px;
+                height: 10px;
+            }
+            to{
+                opacity: 0;
+                transform: rotate(0deg);
+                width: 100px;
+                height: 100px;
+            }
+        }
+
+        @keyframes BlinkNormal{
+            form{
+                opacity: 0;
+                transform: rotate(0deg);
+            }
+            to{
+                opacity: 0;
+                transform: rotate(360deg);
+            }
+        }
+
+        .s1{
+            animation-name: BlinkNormal;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        .s2{
+            animation-name: Blink;
+            animation-duration: 100ms;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        .p{
+            font-size: 100px;
+            color: white;
+            margin-left: 300px;
+            animation-name: Blink;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <img class="s1" src="/public/image/ps1.jpg" alt="img" >
+        <img class="s2" src="/public/image/ps2.jpg" alt="img1" width="50" height="50" style="position:absolute;top:30;right:20;">
+        <p>Welcome</p>
+    </div>
+</body>
+</html>

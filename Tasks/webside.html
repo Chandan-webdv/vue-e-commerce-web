@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopper</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <meta rel="shortcut icon" href="/public/image/fevorit.ico">
+    <style>
+
+        .top-bar{
+            display: flex;
+            justify-content: space-between;
+            background-color: whitesmoke;
+            padding: 10px;
+            border-radius: 5px;
+            padding: 15px;
+        }
+        .top-head{
+            font-size: 10px;
+            margin: 10px;
+        }
+        
+        #Country{
+            border: none;
+            margin-right: 20px;
+            font-size: 15px;
+            font-family: Arial;
+            font-weight: 500;
+        }
+        .top-3{
+            text-decoration: none;
+            margin-right: 20px;
+            color: black;
+            font-size: 16px;
+        }
+        .top-4 span{
+            margin:  10px;
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-between;
+            padding: 30px;
+        } 
+    .title{
+        font-size: 30px;
+        font-family: Arial;
+        font-weight: bold;
+    }
+
+    .titel-2 span>a{
+        margin-right: 30px;
+        font-family: Arial;
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+        padding: 10px;
+        
+    }
+    .title-3 span{
+        margin-right: 20px;
+        color: black;
+    }
+    .titel-4{
+        background-color: black;
+        color: white;
+        justify-content: center;
+        text-align: center;
+        padding: 15px;
+        margin-top: -10px;
+    }
+
+    .container{
+        display:flex ;
+    
+    }
+
+    .card-image{
+        width: 400px; 
+    }
+    a.btn-link1{
+        text-decoration: none;
+    }
+    .btn-1{
+        position: absolute;
+        top: 90%;
+        left: 10%;
+        background-color: white;
+        color: black;
+        font-size: 16px;
+        padding: 12px 24px;
+        border: none;
+        
+    }
+
+    .btn-2{
+        position: absolute;
+        top: 90%;
+        left: 45%;
+        background-color: white;
+        color: black;
+        font-size: 16px;
+        padding: 12px 24px;
+        border: none;   
+    }
+
+    .btn-3{
+        position: absolute;
+        top: 90%;
+        left: 80%;
+        background-color: white;
+        color: black;
+        font-size: 16px;
+        padding: 12px 24px;
+        border: none; 
+    }
+    .shopping-offers{
+            display: flex;
+            justify-content: space-between;
+            padding: 25px;
+    }
+    .line-5{
+        font-size: 13px;
+        font-family: Arial;
+        font-weight: 550;
+        margin-left: 15px;
+    }
+    .bi-truck{
+        color: brown;
+        font-weight: bold;
+    }
+    .bi-arrow-left-right{
+        color: brown;
+        font-weight: bold;
+    }
+    .bi-lock-fill{
+        color: brown;
+        font-weight: bold;
+    }
+    .bi-tag-fill{
+        color: brown;
+        font-weight: bold;
+    }
+    .sub-line-5{
+        font-size: 15px;
+        color: gray;
+        margin-left: 30px;
+    }
+    hr{
+        margin-top: -5px;
+        margin-left: 20px;
+        margin-right: 20px;
+        color: gray;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <span class=" bi bi-truck-front-fill">
+                <span class="top-head">FREE SHIPPING WORLDWIDE</span></span>
+       
+        <div class="">
+            <select  name="United State" id="Country">
+                <option value="United State">United State</option>
+                <option value="Canada">Canada</option>
+                <option value="Germany">Germany</option>
+            </select>
+       
+            <select name="USD" id="Country">
+                <option value="United State">USD</option>
+                <option value="Canada">UER</option>
+            </select>
+        
+            <select name="English" id="Country">
+                <option value="United State">English</option>
+                <option value="Canada">France</option>
+                <option value="Germany">Germany</option>
+            </select>
+        </div>
+        <div>
+            <span ><a class="top-3" href="#">Shopping</a></span>
+            <span><a  class="top-3" href="#">FAQ</a></span>
+            <span ><a class="top-3" href="#">Contact</a></span>
+        </div>
+
+        <div class="top-4">
+            <span class="bi bi-facebook"></span>
+            <span class="bi bi-twitter"></span>
+            <span class="bi bi-instagram"></span>
+            <span class="bi bi-speaker"></span>
+        </div>
+    </div>
+
+    <nav>
+        <div class="title">Shopper.</div>
+        
+        <div class="titel-2">
+            <span><a href="#">Home</a></span>
+            <span><a href="#">Catalog</a></span>
+            <span><a href="#">Shop</a></span>
+            <span><a href="#">Pages</a></span>
+            <span><a href="#">Blog</a></span>
+            <span><a href="#">Docs</a></span>
+        </div>
+
+        <div class="title-3">
+            <a href="#"><span class="bi bi-search"></span></a>
+            <a href="#"><span class="bi bi-person"></span></a>
+            <a href="#"><span class="bi bi-heart"></span></a>
+            <a href="#"><span class="bi bi-cart"></span></a>
+        </div>
+    </nav>
+
+    <div>
+        <p class="titel-4">⚡️ HAPPY HOLIDAY DEALS ON EVERYTHING ⚡️</p>
+    </div>
+    </header>
+
+    <section>
+           <div class="container">
+            <div class="card-image">
+                <img src="/public/image/tsk1.jpg" alt="first pic" width="450px" height="470px">
+                <button class="btn-1"><a href="#" class="btn-link1">Shop Women <span class="bi bi-arrow-right"></a></span></button>
+            </div>
+            <div class="card-image">
+                <img src="/public/image/tsk2.jpg" alt="second pic" width="450px" height="470px">
+                <button class="btn-2"><a href="#" class="btn-link1">Shop Men <span class="bi bi-arrow-right"></span></a></button>
+            </div>
+            <div class="card-image">
+                <img src="/public/image/tak3.jpg" alt="thired pic" width="450px" height="470px">
+                <button class="btn-3"><a href="#" class="btn-link1">Shop Kids <span class="bi bi-arrow-right"></span></a></button>
+            </div>
+           </div> 
+
+           <div class="shopping-offers">
+            <div>
+                <span class="bi bi-truck"></span><span class="line-5">FREE SHIPPING</span>
+                <div class="sub-line-5">Form all orders over $100</div>
+            </div>
+
+            <div>
+                <span class="bi bi-arrow-left-right"></span><span class="line-5">FREE RETURNS</span>
+                <div class="sub-line-5">Return money within 30 days</div>
+            </div>
+            
+            <div>
+                <span class="bi bi-lock-fill"></span><span class="line-5">SECURE SHOPPING</span>
+                <div class="sub-line-5">You're in safe hands</div>
+            </div>
+            
+            <div>
+                <span class="bi bi-tag-fill"></span><span  class="line-5">OVER 10,000 STYLES</span>
+                <div class="sub-line-5">We have everything you need</div>
+            </div>
+           </div>
+
+           <div>
+            <hr>
+           </div>
+
+           <div>
+            <div class="">NEW COLLECTION</div>
+           </div>
+    </section>
+</body>
+</html>

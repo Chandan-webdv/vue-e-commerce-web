@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes Spinner{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+
+        div{
+            border-left: 20px solid red;
+            border-right: 20px solid yellow;
+            border-top: 20px solid green;
+            border-bottom: 20px solid pink;
+            width: 200px;
+            height: 200px;
+            border-radius: 200px;
+            animation-name: Spinner;
+            animation-duration: 700ms;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

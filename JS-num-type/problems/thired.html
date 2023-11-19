@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// Write a function to extract last 4 char from card number.
+//ex GateCode("5788-2223-4567-1140")
+function GateCode(card){
+        var lastChars=card.substring(card.lastIndexOf("-")+1);
+        document.write(`Your Card : ${card}<br>`);
+        document.write(`Card last 4chars: ${lastChars}`);
+    }
+    GateCode(prompt("Enter 16 chars card Numbaer"));
+    </script>
+</body>
+</html>

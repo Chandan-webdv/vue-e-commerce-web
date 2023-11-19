@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        img{
+            margin-right: 100px;
+            transition: 3s;
+        }
+
+        img:hover{
+            transform: scale(2,2,2);
+            transition: 3s;
+            box-shadow: 15px 15px 2px black;
+        }
+    </style>
+</head>
+<body>
+    <marquee height="400" scrollamount="15" onmouseover="this.stop()" onmouseout="this.start()">
+        <img src="../public/image/ps1.jpg" height="100" width="100">
+        <img src="../public/image/ps2.jpg" height="100" width="100">
+        <img src="../public/image/ps3.jpg" height="100" width="100">
+        <img src="../public/image/ps1.jpg" height="100" width="100">
+        <img src="../public/image/ps2.jpg" height="100" width="100">
+    </marquee>
+</body>
+</html>

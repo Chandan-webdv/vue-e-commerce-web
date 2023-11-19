@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //trim()        : It is used to remove leading spaces from a string.
+        //[space before and after string]
+        function SubmitClick(){
+            var opt = document.getElementById("txtOtp").value;
+            if(opt.trim()=="4567"){
+                document.write("Payment Success..");
+            } else {trim()        : It is used to remove leading spaces from a string.
+              [space before and after string]
+                document.write("Invalid OTP");
+            }
+        }
+    </script>
+</head>
+<body>
+    OTP : <input type="text" size="4" id="txtOtp"> <button onclick="SubmitClick()">Submit</button>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-in using form</title>
+    <style>
+          ul {
+            list-style: none;
+            border:1px solid gray;
+            width: 130px;
+            height: 60px;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <form method="get">
+        <dl>
+            <dt>Select Course</dt>
+            <dd>
+                <ul>
+                    <li><input type="checkbox" name="course" value="HTML">HTML</li>
+                    <li><input type="checkbox" name="course" value="CSS">CSS</li>
+                    <li><input type="checkbox" name="course" value="JavaScript">JavaScript</li>
+                    <li><input type="checkbox" name="course" value="jQuary">jQuary</li>
+                    <input type="text" pattern="[A-Z a-z]{4,15}">
+                </ul>
+            </dd>
+        </dl>
+        <button>Submit</button>
+    </form>
+</body>
+</html>

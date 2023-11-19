@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var size = 1;
+        var colorName;
+        function FontChange(){
+            size = document.getElementById("sizeRange").value;
+            document.getElementById("lblSample").innerHTML = "Sample Text".fontsize(size).fontcolor(colorName);
+        }
+        function ColorChange(){
+            colorName = document.getElementById("txtColor").value;
+            document.getElementById("lblSample").innerHTML = "Sample Text".fontcolor(colorName).fontsize(size);
+        }
+    </script>
+</head>
+<body>
+    <dl>
+        <dt>Font Size</dt>
+        <dt> 1<input type="range" id="sizeRange" onchange="FontChange()" value="1" min="1" max="10"> 10 </dt>
+        <dt>Color</dt>
+        <dt><input type="color" onchange="ColorChange()" id="txtColor"></dt>
+        <dd id="lblSample"></dd>
+    </dl>
+</body>
+</html>

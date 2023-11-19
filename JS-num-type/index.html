@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INOX</title>
+    <link rel="stylesheet" href="..//node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="..//node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet">
+    <script type="text/javascript">
+        function GetSummary(){
+            document.getElementById("summaryContainer").style.display="block";
+            document.getElementById(btnContainer).style.display="none";
+
+            document.getElementById("lblMovie").innerText=document.getElementById("lstMovies").value;
+            document.getElementById("lblCinema").innerText=document.getElementById("lstCinema").value;
+            document.getElementById("lblDate").innerText=document.getElementById("lstdate").value;
+            document.getElementById("lblTime").innerText=document.getElementById("lstTime").value;
+            document.getElementById("lblSeats").innerText=document.getElementById("lstseats").value;
+            
+            
+            movieName=document.getElementById("lstMovies").value;
+            imgposter=document.getElementById("imgPoster")
+            
+            if(movieName=="Kushi"){
+                imgposter.src="..//public/image/ps1.jpg";
+            }else{
+                imgposter.src="..//public/image/ps2.jpg";
+            }
+
+            }
+        
+    </script>
+</head>
+<body class="container-fluid">
+<div class="btnContainer">
+    <button data-bs-target="#movies" data-bs-toggle="modal" class="btn btn-danger mt-2">Quick Booking</button>
+</div>
+
+<div>
+    <div class="modal fade" id="movies">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Quick Booking</h3>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <nav class="d-flex bg-dark text-white p-3 justify-content-between">
+                        <div>
+                            <select class="form-select" id="lstMovies">
+                                <option>Select Movie</option>
+                                <option>Khusi</option>
+                                <option>Jawan</option>
+                            </select>
+                        </div>
+                        <div>
+                            <select class="form-select" id="lstCinema">
+                                <option>Select Cinema</option>
+                                <option>INOX- B'hills</option>
+                                <option>INOX -KPHB</option>
+                            </select>
+                        </div>
+                        <div>
+                            <select class="form-select" id="lstDate">
+                                <option>Select Date</option>
+                                <option>Today 12 sep</option>
+                                <option>Tomorrow 10 sep</option>
+                            </select>
+                        </div>
+                        <div>
+                            <select class="form-select" id="lstTime">
+                                <option>Select Time</option>
+                                <option>10:30</option>
+                                <option>07:54</option>
+                            </select>
+                        </div>
+                        <div>
+                            <select class="form-select" id="lstSeats">
+                                <option>Select Seats</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        </div>
+                        <div>
+                            <button onclick="GetSummary()" data-bs-dismiss="modal" class="btn btn-danger">Book</button>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="summaryContainer" style="display:none ;">
+        <dl class="w-50">
+            <h4 class="bg-dark text-white p-2">Booking Summary</h4>
+            <div class="row">
+                <div class="col">
+                    <img width="100%" height="250" border="1" id="imgPoster">
+                </div>
+                <div>
+                    <dt>Movie</dt>
+                    <dd>lblMovie</dd>
+                    <dt>Cinema</dt>
+                    <dd>lblCinema</dd>
+                    <dt>Date</dt>
+                    <dd>lblDate</dd>
+                    <dt>Time</dt>
+                    <dd>lblTime</dd>
+                    <dt>Seats</dt>
+                    <dd>lblSeats</dd>
+                </div>
+            </div>
+        </dl>
+        <button class="btn btn-link" data-bs-toggle="modal" data-bs-target="#movies">Modify Booking</button>
+    </div>
+</div>
+
+
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="..//node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

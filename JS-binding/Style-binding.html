@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function VerifyName(){
+            var UserNameTextbox=document.getElementById("UserName");
+            if(UserNameTextbox.value==""){
+                UserNameTextbox.style.border="1px solid red";
+                UserNameTextbox.style.boxShadow="2px 2px 2px red";
+            }else{
+                UserNameTextbox.style.border="1px solid green";
+                UserNameTextbox.style.boxShadow="2px 2px 2px green";
+            }
+        }
+    </script>
+</head>
+<body>
+    <dl>
+        <dt>User Name</dt>
+        <dd><input type="text" id="UserName" onkeyup="VerifyName()" onblur="VerifyName()"></dd>
+    </dl>
+</body>
+</html>

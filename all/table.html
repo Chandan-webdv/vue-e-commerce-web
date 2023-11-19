@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        img{
+            border-radius: 30px;
+            border: 2px solid black;
+        }
+        a{
+            text-decoration: none;
+            background-color: red;
+            color: white;
+            padding: 5px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <table width="100%" border="1" cellspacing="10" cellpadding="5" frame="box" >
+        <caption>Product List</caption>
+        <colgroup span="4"></colgroup>
+        <thead>
+            <tr>
+                <th>Name <span class="bi bi-sort-alpha-down"></span></th>
+                <th>Price <span class="bi bi-sort-alpha-down"></span></th>
+                <th>Stock<span class="bi bi-sort-alpha-down"></span></th>
+                <th>Preview</th>
+                <th>Action</th>
+            </tr>  
+        </thead>
+        
+        
+        <tbody >
+            <tr align="center" valign="center">
+                <td>Realme gold</td>
+                <td> &#8377; 12999</td>
+                <td>Avaliable</td>
+                <td>
+                    <img src="public/image/ps1.jpg" width="50" height="50">
+                </td>
+                <td>
+                    <a href="#"><span class="bi bi-eye-fill"></span></a>
+                    <a href="#"><span class="bi bi-pen-fill"></span></a>
+                    <a href="#"><span class="bi bi-trash-fill"></span></a>
+                </td>
+            </tr>
+            <tr align="center">
+                <td>Realme Black</td>
+                <td>&#8377; 1299</td>
+                <td>Avalible</td>
+                <td>
+                    <img src="public/image/ps2.jpg" width="50" height="50">
+                </td>
+                <td>
+                    <a href="#"><span class="bi bi-eye-fill"></span></a>
+                    <a href="#"><span class="bi bi-pen-fill"></span></a>
+                    <a href="#"><span class="bi bi-trash-fill"></span></a>
+                </td>
+            </tr>
+            </tbody>
+       
+       
+            <tfoot style="border: none;">
+            <tr >
+                <td ></td>
+                <td></td>
+                <td>&copy;Copyright 2023</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

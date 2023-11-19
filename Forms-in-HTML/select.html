@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select</title>
+</head>
+<body>
+    <h2>The select Element</h2>
+
+    <p>The select element defines a drop-down list:</p>
+    <form>
+    <label for="cars">Choose a car:</label>
+    <select name="cars" id="cars" multiple size="4">
+        <option value="velvo" >valvo</option>
+        <option value="saab">sab</option>
+        <option value="fiat" selected>fiat</option>
+        <option value="audi">audi</option>
+        <option value="maruti">maruti</option>
+       </select><br><br>
+       <textarea name="message" style="width: 100vw; height: 100wh;"> The car was too much speed.
+       </textarea><br><br>
+    <input type="SUBMIT"><br><br>
+
+    <!-- button in Html-->
+    <button type="button" onclick="alert ('hello world')"> cleck me.</button><br><br>
+
+    <!--Fieldset and legend element in Html
+    fieldset: used to group related data in form
+    legend: defines a caption for the <fieldset>-->
+    <fieldset>
+        <legend style="text-align: center;">Personalia</legend>
+        <label for="fname"> first name</label><br>
+        <input type="text" id="fname" name="fname" value="dev"><br><br>
+        <label for="sname">second name</label> <br>
+        <input type="text" id="sname" name="sname" value="Happy">
+  </fieldset><br>
+   <input type="submit" value="submit"><br><br>
+
+   <!-- datalist for dropdown-->
+   <input type="text" list="browser" name="browser">
+   <datalist id="browser">
+    <option value="Ie"></option>
+    <option value="firefox"></option>
+    <option value="chrome"></option>
+    <option value="opera"></option>
+    <option value="safari"></option>
+   </datalist>
+    <input type="submit">
+     <input type="range">
+    </form>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .terms:checked+label{
+            color: green;
+        }
+        .terms+label{
+            color: red;
+        }
+        .terms~button{
+            display: none;
+        }
+        .terms:checked~button{
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Term of service</legend>
+        <textarea cols="30" rows="10"></textarea>
+        <div>
+            <input type="checkbox" class="terms"><label for="terms">i Accept</label>
+            <br><br>
+            <button>Register</button>
+        </div>
+    </fieldset>
+</body>
+</html>

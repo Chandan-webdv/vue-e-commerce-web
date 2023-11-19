@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fieldset/legend CSS box text Shadow</title>
+    <style>
+        legend{
+            text-align: center;
+           background-color: black;
+            color: white;
+            font-size: 20px;
+            font-family: Arial;
+            border-radius: 5%;
+            box-shadow: 5px 5px 5px green;
+        }
+        dt{
+           background-color: gray;
+           font-family: Arial;
+           margin-left: 10px; 
+           padding-bottom: 10px;
+           margin-top: 10px;
+           box-shadow: 5px 5px 5px gray;
+
+        }
+        dl{
+            display: grid;
+            grid-template-columns: 3fr 9fr;
+            padding-bottom: 10px;
+
+        }
+        dd{
+            background-color: aqua;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            width: 50%;
+           box-shadow: 5px 5px 5px red;
+         
+        }
+        h1{
+            text-align: center;
+            text-shadow: 5px 5px 5px gray;
+        }
+    </style>
+</head>
+<body>
+    <h1> About me</h1>
+    <fieldset>
+        <legend>Personal Info</legend>
+        <dl>
+            <dt>Name</dt>
+            <dd>Chandan kumar Das</dd>
+            <dt>Age</dt>
+            <dd>22</dd>
+            <dt>Address</dt>
+            <dd>Meduakul</dd>
+        </dl>
+    </fieldset>
+
+    <fieldset>
+        <legend> Background </legend>
+        <dl>
+            <dt>Study</dt>
+            <dd>MCA</dd>
+            <dt>mark</dt>
+            <dd>8 cgpa</dd>
+        </dl>
+    </fieldset>
+</body>
+</html>

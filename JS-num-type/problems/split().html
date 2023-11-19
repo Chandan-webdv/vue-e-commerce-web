@@ -1,0 +1,18 @@
+<body>
+    <script>
+        //problem :  Split the values from CSV  and store in individual reference.
+        function GetDetails(str){
+        var [john, david] = str.split(',');
+        document.write(`${john}<br>${david}<br>`);
+    }
+    GetDetails("John-Manager-9988445673, David-Admin-8844558482");
+
+    function GetDetail(str){
+        var employees = str.split(',');
+        var  john = employees[0];
+        var david = employees[1];
+        document.write(`${john}<br>${david}`);
+    }
+    GetDetail("John-Manager-9988445673, David-Admin-8844558482");
+    </script>
+</body>

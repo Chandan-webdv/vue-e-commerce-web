@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--String manipulation method & Properties -->
+    <title> 1.length</title>
+    <script>
+ //  length() it return the total count of chars in string .     
+        var password;
+        var pwdError;
+        function VerifyRequired(){
+            password=document.getElementById("txtPwd").value;
+            pwdError=document.getElementById("pwdError");
+            if(password.length==0){
+                pwdError.innerHTML="password can't be empty".fontcolor("red");
+            }else{
+                    pwdError.innerHTML="";
+               
+            }
+        }
+
+        function VerifyLength(){
+            password=document.getElementById("txtPwd").value;
+            pwdError=document.getElementById("pwdError");
+            if(password.length==0){
+                pwdError.innerHTML="password can't be Empty".fontcolor("red");
+            }else if(password.length<4){
+                pwdError.innerHTML="password too short..min 4chars required".fontcolor("red");
+            }else{
+                pwdError.innerHTML="";
+            }
+            }
+// charAt() it return the char at specified index            
+        function VerifyMobile(){
+            var mobile=document.getElementById("txtMobile").value;
+            var mobileError=document.getElementById("mobileError");
+            if(mobile.charAt(0)=="+"){
+                mobileError.innerHTML="";
+
+            }else{
+                mobileError.innerHTML="Mobile must start with + and Country code".fontcolor("red");
+            }
+        }
+ //charCodeAt() it return the ASCII code of character at specified index.
+        function VarifyName(){
+            var Name= document.getElementById("txtName").value;
+            var nameError= document.getElementById("nameError");
+            var firstCharCode=Name.charCodeAt(0);
+            if(firstCharCode>=65&&firstCharCode<=90){
+                nameError.innerHTML="";
+            }else{
+                nameError.innerHTML="Name must start with uppercase letter".fontcolor("red");
+            }
+        }
+
+    
+    </script>
+</head>
+<body>
+    <dl>
+        <dt>User Name</dt>
+        <dd><input type="text" onblur="VarifyName()" id="txtName"></dd>
+        <dd id="nameError"></dd>
+        <dt>Password</dt>
+        <dd><input type="password" onkeyup="VerifyLength()" 
+            onblur="VerifyRequired()" id="txtPwd"></dd>
+        <dd id="pwdError"></dd>
+        <dt>Mobile</dt>
+        <dd><input type="text" onblur="VerifyMobile()" 
+            id="txtMobile"></dd>
+        <dd id="mobileError"></dd>
+    </dl>
+</body>
+</html>

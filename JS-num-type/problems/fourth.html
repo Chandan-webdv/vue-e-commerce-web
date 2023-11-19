@@ -1,0 +1,12 @@
+<body>
+    <script>
+        //Extract last 4 chars from card.
+        // GetCode("5788222345671140"); dont't give any symbol.
+
+        function GetDetails(card){
+            var totalChars=card.length;
+            document.write(`last 4 char : ${card.substring(totalChars,12)}`);
+        }
+        GetDetails(prompt("enter the number","total 16 chars"));
+    </script>
+</body>

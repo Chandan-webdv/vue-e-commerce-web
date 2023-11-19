@@ -1,0 +1,11 @@
+<body>
+    <script>
+        //split():
+        // It splits the string at specified character and returns an array.
+        function GetDetails(str){
+            var [name,price,rate]=str.split("-");
+            document.write(`Name=${name}<br>price=${price}<br>rate=${rate}`);
+        }
+        GetDetails("Samsung Tv-56000.33-4.5");
+    </script>
+</body>

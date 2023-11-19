@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+        }
+        form {
+            border: 1px solid gray;
+            border-radius: 20px;
+            padding: 20px;
+            width: 200px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input {
+            margin-top: 10px;
+        }
+        .UserName, .Password {
+            width: 100%;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h3> <span class="bi bi-person-fill"></span> User Login</h3>
+        <div class="form-group">
+            <label for="UserName">User Name</label>
+            <div>
+                <input type="text" name="UserName" class="UserName">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="Password">Password</label>
+            <div>
+                <input type="password" name="password" class="Password">
+            </div>
+        </div>
+        <div class="form-group">
+            <input type="checkbox" name="Signin"><label for="Signin">Keep me signed in</label>
+        </div>
+        <div class="form-group">
+            <button>Login</button>
+            <button>Cancel</button>
+        </div>
+    </form>
+</body>
+</html>

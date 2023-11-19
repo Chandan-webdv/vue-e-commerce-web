@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //function ChangeCase(){
+        //    var username=document.getElementById("UserName").value;
+         //   document.getElementById("UserName").value=username.toUpperCase();
+       // }
+        function VarifyName(){
+            var username=document.getElementById("UserName").value;
+            var userError=document.getElementById("UserError");
+        
+            if(username==""){
+                UserError.innerHTML="Name Required".fontcolor("red").bold().italics();
+            }
+                else{
+                    usererror.innerHTML="";
+                }
+            }
+            
+        
+    </script>
+</head>
+<body>
+    <dl>
+        <dt>User name</dt>
+        <dd><input type="text" onblur="VarifyName()" 
+            onkeyup="ChangeCase()" id="UserName" placeholder="Name in block letters"></dd>
+            <dd id="UserError"></dd>
+
+    </dl>
+</body>
+</html> 
+
